@@ -1,0 +1,9 @@
+# Katalon project files to ignore
+.settings/
+bin/
+Libs/
+.classpath
+.project
+*.log
+*.tmp
+.DS_Store
