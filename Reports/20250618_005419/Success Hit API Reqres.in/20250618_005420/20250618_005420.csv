@@ -1,0 +1,27 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Success Hit API Reqres.in,,,,18-06-2025 00:54:23,18-06-2025 00:54:26,3.010s,ERROR
+,,,,,,,
+Test Cases/Success GET List Users,,,,18-06-2025 00:54:24,18-06-2025 00:54:25,1.538s,PASSED
+"response = sendRequestAndVerify(findTestObject(""GET - List Users""))",,,,18-06-2025 00:54:24,18-06-2025 00:54:25,1.252s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,18-06-2025 00:54:25,18-06-2025 00:54:25,0.008s,PASSED
+json = JsonSlurper().parseText(response.getResponseText()),,,,18-06-2025 00:54:25,18-06-2025 00:54:25,0.010s,PASSED
+"verifyGreaterThan(data.size(), 1)",,,,18-06-2025 00:54:25,18-06-2025 00:54:25,0.013s,PASSED
+"verifyElementPropertyValue(response, ""page"", 1)",,,,18-06-2025 00:54:25,18-06-2025 00:54:25,0.017s,PASSED
+"verifyElementPropertyValue(response, ""per_page"", data.size())",,,,18-06-2025 00:54:25,18-06-2025 00:54:25,0.011s,PASSED
+"verifyElementPropertyValue(response, ""total"", total)",,,,18-06-2025 00:54:25,18-06-2025 00:54:25,0.011s,PASSED
+"verifyElementPropertyValue(response, ""total_pages"", total_pages)",,,,18-06-2025 00:54:25,18-06-2025 00:54:25,0.011s,PASSED
+,,,,,,,
+Test Cases/Success Update Data User,,,,18-06-2025 00:54:25,18-06-2025 00:54:26,0.719s,PASSED
+"response_list = sendRequestAndVerify(findTestObject(""GET - List Users""))",,,,18-06-2025 00:54:25,18-06-2025 00:54:25,0.121s,PASSED
+"verifyResponseStatusCode(response_list, 200)",,,,18-06-2025 00:54:25,18-06-2025 00:54:25,0.002s,PASSED
+json_list = JsonSlurper().parseText(response_list.getResponseText()),,,,18-06-2025 00:54:25,18-06-2025 00:54:25,0.002s,PASSED
+id = id,,,,18-06-2025 00:54:25,18-06-2025 00:54:25,0.004s,PASSED
+"response_update = sendRequestAndVerify(findTestObject(""PUT - Update Data User""))",,,,18-06-2025 00:54:25,18-06-2025 00:54:26,0.529s,PASSED
+"verifyResponseStatusCode(response_update, 200)",,,,18-06-2025 00:54:26,18-06-2025 00:54:26,0.003s,PASSED
+json_put = JsonSlurper().parseText(response_update.getResponseText()),,,,18-06-2025 00:54:26,18-06-2025 00:54:26,0.001s,PASSED
+"verifyElementPropertyValue(response_update, ""name"", name)",,,,18-06-2025 00:54:26,18-06-2025 00:54:26,0.011s,PASSED
+"verifyElementPropertyValue(response_update, ""job"", job)",,,,18-06-2025 00:54:26,18-06-2025 00:54:26,0.008s,PASSED
+,,,,,,,
+Test Cases/Success DELETE User,,,,18-06-2025 00:54:26,18-06-2025 00:54:26,0.117s,ERROR
+"resp_list = sendRequestAndVerify(findTestObject(""GET - List Users""))",,,,18-06-2025 00:54:26,18-06-2025 00:54:26,0.109s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,18-06-2025 00:54:26,18-06-2025 00:54:26,0.002s,ERROR

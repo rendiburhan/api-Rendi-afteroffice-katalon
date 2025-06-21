@@ -1,0 +1,64 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Success Hit API Reqres.in,,,,18-06-2025 10:45:02,18-06-2025 10:45:07,4.496s,PASSED
+,,,,,,,
+Test Cases/Success GET List Users,,,,18-06-2025 10:45:03,18-06-2025 10:45:04,1.126s,PASSED
+"response = sendRequestAndVerify(findTestObject(""GET - List Users""))",,,,18-06-2025 10:45:03,18-06-2025 10:45:04,0.835s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,18-06-2025 10:45:04,18-06-2025 10:45:04,0.008s,PASSED
+json = JsonSlurper().parseText(response.getResponseText()),,,,18-06-2025 10:45:04,18-06-2025 10:45:04,0.011s,PASSED
+"verifyGreaterThan(data.size(), 1)",,,,18-06-2025 10:45:04,18-06-2025 10:45:04,0.013s,PASSED
+"verifyElementPropertyValue(response, ""page"", 1)",,,,18-06-2025 10:45:04,18-06-2025 10:45:04,0.018s,PASSED
+"verifyElementPropertyValue(response, ""per_page"", data.size())",,,,18-06-2025 10:45:04,18-06-2025 10:45:04,0.011s,PASSED
+"verifyElementPropertyValue(response, ""total"", total)",,,,18-06-2025 10:45:04,18-06-2025 10:45:04,0.010s,PASSED
+"verifyElementPropertyValue(response, ""total_pages"", total_pages)",,,,18-06-2025 10:45:04,18-06-2025 10:45:04,0.009s,PASSED
+,,,,,,,
+Test Cases/Success Update Data User,,,,18-06-2025 10:45:04,18-06-2025 10:45:05,1.158s,PASSED
+"response_list = sendRequestAndVerify(findTestObject(""GET - List Users""))",,,,18-06-2025 10:45:04,18-06-2025 10:45:04,0.125s,PASSED
+"verifyResponseStatusCode(response_list, 200)",,,,18-06-2025 10:45:04,18-06-2025 10:45:04,0.003s,PASSED
+json_list = JsonSlurper().parseText(response_list.getResponseText()),,,,18-06-2025 10:45:04,18-06-2025 10:45:04,0.001s,PASSED
+total_data_page = data.size(),,,,18-06-2025 10:45:04,18-06-2025 10:45:04,0.001s,PASSED
+rand = new java.util.Random(),,,,18-06-2025 10:45:04,18-06-2025 10:45:04,0.004s,PASSED
+randIndex = rand.nextInt(total_data_page),,,,18-06-2025 10:45:04,18-06-2025 10:45:04,0.001s,PASSED
+println(randIndex),,,,18-06-2025 10:45:04,18-06-2025 10:45:04,0.004s,PASSED
+id = id,,,,18-06-2025 10:45:04,18-06-2025 10:45:04,0.002s,PASSED
+"response_detail = sendRequestAndVerify(findTestObject(""GET - Single User""))",,,,18-06-2025 10:45:04,18-06-2025 10:45:04,0.455s,PASSED
+"verifyResponseStatusCode(response_detail, 200)",,,,18-06-2025 10:45:04,18-06-2025 10:45:04,0.003s,PASSED
+json_detail = JsonSlurper().parseText(response_detail.getResponseText()),,,,18-06-2025 10:45:04,18-06-2025 10:45:04,0.002s,PASSED
+userId = id,,,,18-06-2025 10:45:04,18-06-2025 10:45:04,0.001s,PASSED
+"response_update = sendRequestAndVerify(findTestObject(""PUT - Update Data User""))",,,,18-06-2025 10:45:04,18-06-2025 10:45:05,0.473s,PASSED
+"verifyResponseStatusCode(response_update, 200)",,,,18-06-2025 10:45:05,18-06-2025 10:45:05,0.003s,PASSED
+json_put = JsonSlurper().parseText(response_update.getResponseText()),,,,18-06-2025 10:45:05,18-06-2025 10:45:05,0.001s,PASSED
+"verifyElementPropertyValue(response_update, ""name"", name)",,,,18-06-2025 10:45:05,18-06-2025 10:45:05,0.018s,PASSED
+"verifyElementPropertyValue(response_update, ""job"", job)",,,,18-06-2025 10:45:05,18-06-2025 10:45:05,0.009s,PASSED
+,,,,,,,
+Test Cases/Success DELETE User,,,,18-06-2025 10:45:05,18-06-2025 10:45:06,0.691s,PASSED
+"resp_list = sendRequestAndVerify(findTestObject(""GET - List Users""))",,,,18-06-2025 10:45:05,18-06-2025 10:45:05,0.115s,PASSED
+"verifyResponseStatusCode(resp_list, 200)",,,,18-06-2025 10:45:05,18-06-2025 10:45:05,0.002s,PASSED
+json_list = JsonSlurper().parseText(resp_list.getResponseText()),,,,18-06-2025 10:45:05,18-06-2025 10:45:05,0.001s,PASSED
+rand = new java.util.Random(),,,,18-06-2025 10:45:05,18-06-2025 10:45:05,0.001s,PASSED
+randIndex = rand.nextInt(data.size()),,,,18-06-2025 10:45:05,18-06-2025 10:45:05,0.001s,PASSED
+id = id,,,,18-06-2025 10:45:05,18-06-2025 10:45:05,0.000s,PASSED
+"resp_del = sendRequestAndVerify(findTestObject(""DELETE - Data User""))",,,,18-06-2025 10:45:05,18-06-2025 10:45:06,0.539s,PASSED
+"verifyResponseStatusCode(resp_del, 204)",,,,18-06-2025 10:45:06,18-06-2025 10:45:06,0.003s,PASSED
+,,,,,,,
+Test Cases/Success Update and Delete Data User,,,,18-06-2025 10:45:06,18-06-2025 10:45:07,1.282s,PASSED
+"response_list = sendRequestAndVerify(findTestObject(""GET - List Users""))",,,,18-06-2025 10:45:06,18-06-2025 10:45:06,0.124s,PASSED
+"verifyResponseStatusCode(response_list, 200)",,,,18-06-2025 10:45:06,18-06-2025 10:45:06,0.002s,PASSED
+json_list = JsonSlurper().parseText(response_list.getResponseText()),,,,18-06-2025 10:45:06,18-06-2025 10:45:06,0.000s,PASSED
+total_data_page = data.size(),,,,18-06-2025 10:45:06,18-06-2025 10:45:06,0.002s,PASSED
+rand = new java.util.Random(),,,,18-06-2025 10:45:06,18-06-2025 10:45:06,0.001s,PASSED
+randIndex = rand.nextInt(total_data_page),,,,18-06-2025 10:45:06,18-06-2025 10:45:06,0.000s,PASSED
+println(randIndex),,,,18-06-2025 10:45:06,18-06-2025 10:45:06,0.002s,PASSED
+id = id,,,,18-06-2025 10:45:06,18-06-2025 10:45:06,0.001s,PASSED
+"response_detail = sendRequestAndVerify(findTestObject(""GET - Single User""))",,,,18-06-2025 10:45:06,18-06-2025 10:45:06,0.141s,PASSED
+"verifyResponseStatusCode(response_detail, 200)",,,,18-06-2025 10:45:06,18-06-2025 10:45:06,0.001s,PASSED
+json_detail = JsonSlurper().parseText(response_detail.getResponseText()),,,,18-06-2025 10:45:06,18-06-2025 10:45:06,0.001s,PASSED
+userId = id,,,,18-06-2025 10:45:06,18-06-2025 10:45:06,0.000s,PASSED
+"response_update = sendRequestAndVerify(findTestObject(""PUT - Update Data User""))",,,,18-06-2025 10:45:06,18-06-2025 10:45:06,0.470s,PASSED
+"verifyResponseStatusCode(response_update, 200)",,,,18-06-2025 10:45:06,18-06-2025 10:45:06,0.002s,PASSED
+json_put = JsonSlurper().parseText(response_update.getResponseText()),,,,18-06-2025 10:45:06,18-06-2025 10:45:06,0.001s,PASSED
+"verifyElementPropertyValue(response_update, ""name"", name)",,,,18-06-2025 10:45:06,18-06-2025 10:45:06,0.011s,PASSED
+"verifyElementPropertyValue(response_update, ""job"", job)",,,,18-06-2025 10:45:06,18-06-2025 10:45:07,0.010s,PASSED
+"response_delete = sendRequestAndVerify(findTestObject(""DELETE - Data User""))",,,,18-06-2025 10:45:07,18-06-2025 10:45:07,0.448s,PASSED
+"verifyResponseStatusCode(response_delete, 204)",,,,18-06-2025 10:45:07,18-06-2025 10:45:07,0.002s,PASSED
+response_delete_body = response_delete.getResponseBodyContent(),,,,18-06-2025 10:45:07,18-06-2025 10:45:07,0.001s,PASSED
+"verifyEqual(response_delete_body, """")",,,,18-06-2025 10:45:07,18-06-2025 10:45:07,0.005s,PASSED

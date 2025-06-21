@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Success Hit API Reqres.in" time="3.115" tests="3" failures="0" errors="0">
+   <testsuite name="Success Hit API Reqres.in" tests="3" failures="0" errors="0" time="3.115" skipped="0" timestamp="18-06-2025T07:43:56" hostname="user - 192.168.0.103" id="Test Suites/Success Hit API Reqres.in">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="/Users/user/Desktop/api-hanifrazin-afteroffice-katalon/Reports/20250618_074352/Success Hit API Reqres.in/20250618_074353"/>
+         <property name="logFiles" value="/Users/user/Desktop/api-hanifrazin-afteroffice-katalon/Reports/20250618_074352/Success Hit API Reqres.in/20250618_074353/execution0.log, /Users/user/Desktop/api-hanifrazin-afteroffice-katalon/Reports/20250618_074352/Success Hit API Reqres.in/20250618_074353/console0.log"/>
+         <property name="attachments" value=""/>
+         <property name="userFullName" value="harazinny project"/>
+         <property name="hostName" value="user - 192.168.0.103"/>
+         <property name="hostAddress" value="192.168.0.103"/>
+         <property name="projectName" value="api-hanifrazin-afteroffice-katalon"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="10.2.0.0"/>
+      </properties>
+      <testcase name="Test Cases/Success GET List Users" time="1.51" classname="Test Cases/Success GET List Users" status="PASSED">
+         <system-out><![CDATA[18-06-2025T07:43:56 - [TEST_CASE][PASSED] - Test Cases/Success GET List Users: Test Cases/Success GET List Users
+
+18-06-2025T07:43:56 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("GET - List Users")): Send request and verify the response successfully
+
+18-06-2025T07:43:58 - [MESSAGE][INFO] - HAR: /Users/user/Desktop/api-hanifrazin-afteroffice-katalon/Reports/20250618_074352/Success Hit API Reqres.in/20250618_074353/requests/main/GET---List-Users_0.har
+
+18-06-2025T07:43:58 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+18-06-2025T07:43:58 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+18-06-2025T07:43:58 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+18-06-2025T07:43:58 - [MESSAGE][PASSED] - Verify response successfully
+
+18-06-2025T07:43:58 - [MESSAGE][PASSED] - All validation steps have been passed
+
+18-06-2025T07:43:58 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+18-06-2025T07:43:58 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+18-06-2025T07:43:58 - [MESSAGE][PASSED] - Verify response status code successfully
+
+18-06-2025T07:43:58 - [TEST_STEP][PASSED] - json = JsonSlurper().parseText(response.getResponseText()): null
+
+18-06-2025T07:43:58 - [TEST_STEP][PASSED] - verifyGreaterThan(data.size(), 1): Actual number '6' is greater than expected number '1'
+
+18-06-2025T07:43:58 - [MESSAGE][PASSED] - Actual number '6' is greater than expected number '1'
+
+18-06-2025T07:43:58 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "page", 1): Verify element property value successfully
+
+18-06-2025T07:43:58 - [MESSAGE][PASSED] - Verify element property value successfully
+
+18-06-2025T07:43:58 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "per_page", data.size()): Verify element property value successfully
+
+18-06-2025T07:43:58 - [MESSAGE][PASSED] - Verify element property value successfully
+
+18-06-2025T07:43:58 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "total", total): Verify element property value successfully
+
+18-06-2025T07:43:58 - [MESSAGE][PASSED] - Verify element property value successfully
+
+18-06-2025T07:43:58 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "total_pages", total_pages): Verify element property value successfully
+
+18-06-2025T07:43:58 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Success Update Data User" time="0.716" classname="Test Cases/Success Update Data User" status="PASSED">
+         <system-out><![CDATA[18-06-2025T07:43:58 - [TEST_CASE][PASSED] - Test Cases/Success Update Data User: Test Cases/Success Update Data User
+
+18-06-2025T07:43:58 - [TEST_STEP][PASSED] - response_list = sendRequestAndVerify(findTestObject("GET - List Users")): Send request and verify the response successfully
+
+18-06-2025T07:43:58 - [MESSAGE][INFO] - HAR: /Users/user/Desktop/api-hanifrazin-afteroffice-katalon/Reports/20250618_074352/Success Hit API Reqres.in/20250618_074353/requests/main/GET---List-Users_1.har
+
+18-06-2025T07:43:58 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+18-06-2025T07:43:58 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+18-06-2025T07:43:58 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+18-06-2025T07:43:58 - [MESSAGE][PASSED] - Verify response successfully
+
+18-06-2025T07:43:58 - [MESSAGE][PASSED] - All validation steps have been passed
+
+18-06-2025T07:43:58 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+18-06-2025T07:43:58 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response_list, 200): Verify response status code successfully
+
+18-06-2025T07:43:58 - [MESSAGE][PASSED] - Verify response status code successfully
+
+18-06-2025T07:43:58 - [TEST_STEP][PASSED] - json_list = JsonSlurper().parseText(response_list.getResponseText()): null
+
+18-06-2025T07:43:58 - [TEST_STEP][PASSED] - id = id: null
+
+18-06-2025T07:43:58 - [TEST_STEP][PASSED] - response_update = sendRequestAndVerify(findTestObject("PUT - Update Data User")): Send request and verify the response successfully
+
+18-06-2025T07:43:58 - [MESSAGE][INFO] - HAR: /Users/user/Desktop/api-hanifrazin-afteroffice-katalon/Reports/20250618_074352/Success Hit API Reqres.in/20250618_074353/requests/main/PUT---Upd...ta-User_2.har
+
+18-06-2025T07:43:58 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+18-06-2025T07:43:58 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+18-06-2025T07:43:58 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+18-06-2025T07:43:58 - [MESSAGE][PASSED] - Verify response successfully
+
+18-06-2025T07:43:58 - [MESSAGE][PASSED] - All validation steps have been passed
+
+18-06-2025T07:43:58 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+18-06-2025T07:43:58 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response_update, 200): Verify response status code successfully
+
+18-06-2025T07:43:58 - [MESSAGE][PASSED] - Verify response status code successfully
+
+18-06-2025T07:43:58 - [TEST_STEP][PASSED] - json_put = JsonSlurper().parseText(response_update.getResponseText()): null
+
+18-06-2025T07:43:58 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response_update, "name", name): Verify element property value successfully
+
+18-06-2025T07:43:59 - [MESSAGE][PASSED] - Verify element property value successfully
+
+18-06-2025T07:43:59 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response_update, "job", job): Verify element property value successfully
+
+18-06-2025T07:43:59 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Success DELETE User" time="0.687" classname="Test Cases/Success DELETE User" status="PASSED">
+         <system-out><![CDATA[18-06-2025T07:43:59 - [TEST_CASE][PASSED] - Test Cases/Success DELETE User: Test Cases/Success DELETE User
+
+18-06-2025T07:43:59 - [TEST_STEP][PASSED] - resp_list = sendRequestAndVerify(findTestObject("GET - List Users")): Send request and verify the response successfully
+
+18-06-2025T07:43:59 - [MESSAGE][INFO] - HAR: /Users/user/Desktop/api-hanifrazin-afteroffice-katalon/Reports/20250618_074352/Success Hit API Reqres.in/20250618_074353/requests/main/GET---List-Users_3.har
+
+18-06-2025T07:43:59 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+18-06-2025T07:43:59 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+18-06-2025T07:43:59 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+18-06-2025T07:43:59 - [MESSAGE][PASSED] - Verify response successfully
+
+18-06-2025T07:43:59 - [MESSAGE][PASSED] - All validation steps have been passed
+
+18-06-2025T07:43:59 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+18-06-2025T07:43:59 - [TEST_STEP][PASSED] - verifyResponseStatusCode(resp_list, 200): Verify response status code successfully
+
+18-06-2025T07:43:59 - [MESSAGE][PASSED] - Verify response status code successfully
+
+18-06-2025T07:43:59 - [TEST_STEP][PASSED] - json_list = JsonSlurper().parseText(resp_list.getResponseText()): null
+
+18-06-2025T07:43:59 - [TEST_STEP][PASSED] - id = id: null
+
+18-06-2025T07:43:59 - [TEST_STEP][PASSED] - resp_del = sendRequestAndVerify(findTestObject("DELETE - Data User")): Send request and verify the response successfully
+
+18-06-2025T07:43:59 - [MESSAGE][INFO] - HAR: /Users/user/Desktop/api-hanifrazin-afteroffice-katalon/Reports/20250618_074352/Success Hit API Reqres.in/20250618_074353/requests/main/DELETE---Data-User_4.har
+
+18-06-2025T07:43:59 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+18-06-2025T07:43:59 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+18-06-2025T07:43:59 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+18-06-2025T07:43:59 - [MESSAGE][PASSED] - Verify response successfully
+
+18-06-2025T07:43:59 - [MESSAGE][PASSED] - All validation steps have been passed
+
+18-06-2025T07:43:59 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+18-06-2025T07:43:59 - [TEST_STEP][PASSED] - verifyResponseStatusCode(resp_del, 204): Verify response status code successfully
+
+18-06-2025T07:43:59 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[18-06-2025T07:43:56 - [TEST_SUITE][PASSED] - Success Hit API Reqres.in: Test Cases/Success DELETE User]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

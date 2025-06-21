@@ -1,0 +1,14 @@
+{
+  "id": "Test Suites/Test Suite Collection Success API",
+  "name": "Test Suite Collection Success API",
+  "reportFolder": "/Users/user/Desktop/api-hanifrazin-afteroffice-katalon/Reports/20250618_104527/Test Suite Collection Success API/20250618_104527",
+  "startTime": 1750218330752,
+  "endTime": 1750218336426,
+  "totalPassedTestCases": "4",
+  "totalErrorTestCases": "0",
+  "totalFailedTestCases": "0",
+  "totalTestCases": "4",
+  "totalIncompleteTestCases": "0",
+  "totalSkippedTestCases": "0",
+  "description": ""
+}

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Success Hit API Reqres.in" time="2.987" tests="3" failures="0" errors="1">
+   <testsuite name="Success Hit API Reqres.in" tests="3" failures="0" errors="1" time="2.987" skipped="0" timestamp="18-06-2025T00:54:23" hostname="user - localhost" id="Test Suites/Success Hit API Reqres.in">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="/Users/user/Desktop/api-hanifrazin-afteroffice-katalon/Reports/20250618_005419/Success Hit API Reqres.in/20250618_005420"/>
+         <property name="logFiles" value="/Users/user/Desktop/api-hanifrazin-afteroffice-katalon/Reports/20250618_005419/Success Hit API Reqres.in/20250618_005420/execution0.log, /Users/user/Desktop/api-hanifrazin-afteroffice-katalon/Reports/20250618_005419/Success Hit API Reqres.in/20250618_005420/console0.log"/>
+         <property name="attachments" value=""/>
+         <property name="userFullName" value="harazinny project"/>
+         <property name="hostName" value="user - localhost"/>
+         <property name="hostAddress" value="127.0.0.1"/>
+         <property name="projectName" value="api-hanifrazin-afteroffice-katalon"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="10.2.0.0"/>
+      </properties>
+      <testcase name="Test Cases/Success GET List Users" time="1.538" classname="Test Cases/Success GET List Users" status="PASSED">
+         <system-out><![CDATA[18-06-2025T00:54:24 - [TEST_CASE][PASSED] - Test Cases/Success GET List Users: Test Cases/Success GET List Users
+
+18-06-2025T00:54:24 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("GET - List Users")): Send request and verify the response successfully
+
+18-06-2025T00:54:25 - [MESSAGE][INFO] - HAR: /Users/user/Desktop/api-hanifrazin-afteroffice-katalon/Reports/20250618_005419/Success Hit API Reqres.in/20250618_005420/requests/main/GET---List-Users_0.har
+
+18-06-2025T00:54:25 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+18-06-2025T00:54:25 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+18-06-2025T00:54:25 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+18-06-2025T00:54:25 - [MESSAGE][PASSED] - Verify response successfully
+
+18-06-2025T00:54:25 - [MESSAGE][PASSED] - All validation steps have been passed
+
+18-06-2025T00:54:25 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+18-06-2025T00:54:25 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+18-06-2025T00:54:25 - [MESSAGE][PASSED] - Verify response status code successfully
+
+18-06-2025T00:54:25 - [TEST_STEP][PASSED] - json = JsonSlurper().parseText(response.getResponseText()): null
+
+18-06-2025T00:54:25 - [TEST_STEP][PASSED] - verifyGreaterThan(data.size(), 1): Actual number '6' is greater than expected number '1'
+
+18-06-2025T00:54:25 - [MESSAGE][PASSED] - Actual number '6' is greater than expected number '1'
+
+18-06-2025T00:54:25 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "page", 1): Verify element property value successfully
+
+18-06-2025T00:54:25 - [MESSAGE][PASSED] - Verify element property value successfully
+
+18-06-2025T00:54:25 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "per_page", data.size()): Verify element property value successfully
+
+18-06-2025T00:54:25 - [MESSAGE][PASSED] - Verify element property value successfully
+
+18-06-2025T00:54:25 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "total", total): Verify element property value successfully
+
+18-06-2025T00:54:25 - [MESSAGE][PASSED] - Verify element property value successfully
+
+18-06-2025T00:54:25 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "total_pages", total_pages): Verify element property value successfully
+
+18-06-2025T00:54:25 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Success Update Data User" time="0.719" classname="Test Cases/Success Update Data User" status="PASSED">
+         <system-out><![CDATA[18-06-2025T00:54:25 - [TEST_CASE][PASSED] - Test Cases/Success Update Data User: Test Cases/Success Update Data User
+
+18-06-2025T00:54:25 - [TEST_STEP][PASSED] - response_list = sendRequestAndVerify(findTestObject("GET - List Users")): Send request and verify the response successfully
+
+18-06-2025T00:54:25 - [MESSAGE][INFO] - HAR: /Users/user/Desktop/api-hanifrazin-afteroffice-katalon/Reports/20250618_005419/Success Hit API Reqres.in/20250618_005420/requests/main/GET---List-Users_1.har
+
+18-06-2025T00:54:25 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+18-06-2025T00:54:25 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+18-06-2025T00:54:25 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+18-06-2025T00:54:25 - [MESSAGE][PASSED] - Verify response successfully
+
+18-06-2025T00:54:25 - [MESSAGE][PASSED] - All validation steps have been passed
+
+18-06-2025T00:54:25 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+18-06-2025T00:54:25 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response_list, 200): Verify response status code successfully
+
+18-06-2025T00:54:25 - [MESSAGE][PASSED] - Verify response status code successfully
+
+18-06-2025T00:54:25 - [TEST_STEP][PASSED] - json_list = JsonSlurper().parseText(response_list.getResponseText()): null
+
+18-06-2025T00:54:25 - [TEST_STEP][PASSED] - id = id: null
+
+18-06-2025T00:54:25 - [TEST_STEP][PASSED] - response_update = sendRequestAndVerify(findTestObject("PUT - Update Data User")): Send request and verify the response successfully
+
+18-06-2025T00:54:26 - [MESSAGE][INFO] - HAR: /Users/user/Desktop/api-hanifrazin-afteroffice-katalon/Reports/20250618_005419/Success Hit API Reqres.in/20250618_005420/requests/main/PUT---Upd...ta-User_2.har
+
+18-06-2025T00:54:26 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+18-06-2025T00:54:26 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+18-06-2025T00:54:26 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+18-06-2025T00:54:26 - [MESSAGE][PASSED] - Verify response successfully
+
+18-06-2025T00:54:26 - [MESSAGE][PASSED] - All validation steps have been passed
+
+18-06-2025T00:54:26 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+18-06-2025T00:54:26 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response_update, 200): Verify response status code successfully
+
+18-06-2025T00:54:26 - [MESSAGE][PASSED] - Verify response status code successfully
+
+18-06-2025T00:54:26 - [TEST_STEP][PASSED] - json_put = JsonSlurper().parseText(response_update.getResponseText()): null
+
+18-06-2025T00:54:26 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response_update, "name", name): Verify element property value successfully
+
+18-06-2025T00:54:26 - [MESSAGE][PASSED] - Verify element property value successfully
+
+18-06-2025T00:54:26 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response_update, "job", job): Verify element property value successfully
+
+18-06-2025T00:54:26 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Success DELETE User" time="0.117" classname="Test Cases/Success DELETE User" status="ERROR">
+         <error type="ERROR" message="Test Cases/Success DELETE User FAILED.&#xa;Reason:&#xa;groovy.lang.MissingPropertyException: No such property: response for class: Script1750180159328&#xa;	at Success DELETE User.run(Success DELETE User:23)&#xa;	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xa;	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:486)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:477)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:456)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:448)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:406)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:406)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:406)&#xa;	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:160)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:107)&#xa;	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:186)&#xa;	at TempTestSuite1750182860999.run(TempTestSuite1750182860999.groovy:35)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)&#xa;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#xa;"/>
+         <system-out><![CDATA[18-06-2025T00:54:26 - [TEST_CASE][ERROR] - Test Cases/Success DELETE User: Test Cases/Success DELETE User FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: response for class: Script1750180159328
+	at Success DELETE User.run(Success DELETE User:23)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:486)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:477)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:456)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:406)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:406)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:406)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:160)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:107)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:186)
+	at TempTestSuite1750182860999.run(TempTestSuite1750182860999.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+18-06-2025T00:54:26 - [TEST_STEP][PASSED] - resp_list = sendRequestAndVerify(findTestObject("GET - List Users")): Send request and verify the response successfully
+
+18-06-2025T00:54:26 - [MESSAGE][INFO] - HAR: /Users/user/Desktop/api-hanifrazin-afteroffice-katalon/Reports/20250618_005419/Success Hit API Reqres.in/20250618_005420/requests/main/GET---List-Users_6.har
+
+18-06-2025T00:54:26 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+18-06-2025T00:54:26 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+18-06-2025T00:54:26 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+18-06-2025T00:54:26 - [MESSAGE][PASSED] - Verify response successfully
+
+18-06-2025T00:54:26 - [MESSAGE][PASSED] - All validation steps have been passed
+
+18-06-2025T00:54:26 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+18-06-2025T00:54:26 - [TEST_STEP][ERROR] - verifyResponseStatusCode(response, 200): Test Cases/Success DELETE User FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: response for class: Script1750180159328
+	at Success DELETE User.run(Success DELETE User:23)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:486)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:477)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:456)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:406)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:406)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:406)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:160)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:107)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:186)
+	at TempTestSuite1750182860999.run(TempTestSuite1750182860999.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+18-06-2025T00:54:26 - [MESSAGE][ERROR] - Test Cases/Success DELETE User FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: response for class: Script1750180159328
+	at Success DELETE User.run(Success DELETE User:23)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:486)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:477)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:456)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:406)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:406)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:406)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:160)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:107)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:186)
+	at TempTestSuite1750182860999.run(TempTestSuite1750182860999.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)]]></system-out>
+         <system-err><![CDATA[18-06-2025T00:54:26 - [TEST_CASE][ERROR] - Test Cases/Success DELETE User: Test Cases/Success DELETE User FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: response for class: Script1750180159328
+	at Success DELETE User.run(Success DELETE User:23)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:486)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:477)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:456)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:406)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:406)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:406)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:160)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:107)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:186)
+	at TempTestSuite1750182860999.run(TempTestSuite1750182860999.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[18-06-2025T00:54:23 - [TEST_SUITE][ERROR] - Success Hit API Reqres.in: Test Cases/Success DELETE User FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: response for class: Script1750180159328
+	at Success DELETE User.run(Success DELETE User:23)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:486)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:477)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:456)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:160)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:107)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:186)
+	at TempTestSuite1750182860999.run(TempTestSuite1750182860999.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)]]></system-out>
+      <system-err><![CDATA[18-06-2025T00:54:23 - [TEST_SUITE][ERROR] - Success Hit API Reqres.in: Test Cases/Success DELETE User FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: response for class: Script1750180159328
+	at Success DELETE User.run(Success DELETE User:23)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:486)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:477)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:456)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:160)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:107)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:186)
+	at TempTestSuite1750182860999.run(TempTestSuite1750182860999.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)]]></system-err>
+   </testsuite>
+</testsuites>
